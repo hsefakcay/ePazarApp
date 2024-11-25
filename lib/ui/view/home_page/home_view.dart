@@ -1,6 +1,8 @@
 import 'package:e_pazar_app/core/constants/color.dart';
 import 'package:e_pazar_app/core/constants/icon_sizes.dart';
 import 'package:e_pazar_app/core/constants/language.dart';
+import 'package:e_pazar_app/core/utils/project_utility.dart';
+import 'package:e_pazar_app/core/utils/screen_utility.dart';
 import 'package:e_pazar_app/data/model/product.dart';
 import 'package:e_pazar_app/product/widgets/product_card.dart';
 import 'package:e_pazar_app/product/widgets/search_product_field.dart';
@@ -68,11 +70,20 @@ class _HomePageState extends State<HomeView> with HomeViewMixin {
             padding: const EdgeInsets.symmetric(horizontal: 12),
             child: Column(
               children: [
-                const Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Expanded(child: searchProductField()),
-                  ],
+                const searchProductField(),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Text(
+                        "Recent Products",
+                        style: Theme.of(context).textTheme.titleMedium,
+                      ),
+                      _dropDownMenu(ScreenUtil.screenWidth(context), context, productList),
+                    ],
+                  ),
                 ),
                 Expanded(
                   child: productList.isNotEmpty
@@ -108,53 +119,64 @@ class _HomePageState extends State<HomeView> with HomeViewMixin {
     );
   }
 
-  DropdownMenu<String> _dropDownMenu(
+  Container _dropDownMenu(
     double mWidth,
     BuildContext context,
     List<Product> productList,
   ) {
-    return DropdownMenu(
-        menuStyle: MenuStyle(backgroundColor: WidgetStateProperty.resolveWith((
-          states,
-        ) {
-          return AppColor.whiteColor;
-        })),
-        trailingIcon: Icon(Icons.filter_list_rounded),
-        inputDecorationTheme: InputDecorationTheme(suffixIconColor: AppColor.whiteColor),
-        width: mWidth * 0.3,
-        textStyle: Theme.of(context).textTheme.labelSmall,
-        onSelected: (sortType) {
-          sortFoods(sortType, productList);
-        },
-        dropdownMenuEntries: <DropdownMenuEntry<String>>[
-          DropdownMenuEntry(
-            value: "sortByPriceAscending",
-            label: "sortByPriceAscending",
-            style: MenuItemButton.styleFrom(
-              backgroundColor: Colors.white, //unselected background color,
-            ),
+    return Container(
+      height: 40,
+      decoration: ProjectUtility.signUpBoxDecoration,
+      child: DropdownMenu(
+          hintText: "   Filters",
+          menuStyle: MenuStyle(
+            backgroundColor: WidgetStateProperty.resolveWith((states) {
+              return AppColor.whiteColor;
+            }),
           ),
-          DropdownMenuEntry(
-            value: "sortByPriceDescending",
-            label: "sortByPriceDescending",
-            style: MenuItemButton.styleFrom(
-              backgroundColor: Colors.white, //unselected background color,
-            ),
+          enableSearch: true,
+          inputDecorationTheme: InputDecorationTheme(
+            suffixIconColor: AppColor.primaryColor,
           ),
-          DropdownMenuEntry(
-            value: "sortByAlphabeticalAscending",
-            label: "sortByAlphabeticalAscending",
-            style: MenuItemButton.styleFrom(
-              backgroundColor: Colors.white, //unselected background color,
+          width: mWidth * 0.3,
+          textStyle: Theme.of(context).textTheme.labelSmall,
+          onSelected: (sortType) {
+            sortFoods(sortType, productList);
+          },
+          dropdownMenuEntries: <DropdownMenuEntry<String>>[
+            DropdownMenuEntry(
+              value: "sortByPriceAscending",
+              label: "Sort By PriceAscending",
+              style: MenuItemButton.styleFrom(
+                textStyle: Theme.of(context).textTheme.labelSmall,
+                backgroundColor: Colors.white, //unselected background color,
+              ),
             ),
-          ),
-          DropdownMenuEntry(
-            value: "sortByAlphabeticalDescending",
-            label: "sortByAlphabeticalDescending",
-            style: MenuItemButton.styleFrom(
-              backgroundColor: Colors.white, //unselected background color,
+            DropdownMenuEntry(
+              value: "sortByPriceDescending",
+              label: "Sort By Price Descending",
+              style: MenuItemButton.styleFrom(
+                textStyle: Theme.of(context).textTheme.labelSmall,
+                backgroundColor: Colors.white, //unselected background color,
+              ),
             ),
-          ),
-        ]);
+            DropdownMenuEntry(
+              value: "sortByAlphabeticalAscending",
+              label: "Sort By Alphabetical Ascending",
+              style: MenuItemButton.styleFrom(
+                textStyle: Theme.of(context).textTheme.labelSmall,
+                backgroundColor: Colors.white, //unselected background color,
+              ),
+            ),
+            DropdownMenuEntry(
+              value: "sortByAlphabeticalDescending",
+              label: "Sort By Alphabetical Descending",
+              style: MenuItemButton.styleFrom(
+                textStyle: Theme.of(context).textTheme.labelSmall,
+                backgroundColor: Colors.white, //unselected background color,
+              ),
+            ),
+          ]),
+    );
   }
 }

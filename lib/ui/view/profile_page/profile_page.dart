@@ -18,13 +18,11 @@ class _ProfileViewState extends State<ProfileView> with TickerProviderStateMixin
     return Scaffold(
       backgroundColor: AppColor.whiteColor,
       appBar: AppBar(
-        backgroundColor: AppColor.primaryColor,
         automaticallyImplyLeading: false,
         title: Text("Profile",
-            style: Theme.of(context)
-                .textTheme
-                .headlineSmall
-                ?.copyWith(color: AppColor.whiteColor, fontWeight: FontWeight.bold)),
+            style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                  color: AppColor.blackColor,
+                )),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -71,7 +69,7 @@ class _ProfileViewState extends State<ProfileView> with TickerProviderStateMixin
                   ProfileIconTextButton(
                       text: "Payment Methods", icon: Icons.credit_card_rounded, onPressed: () {}),
                   ProfileIconTextButton(
-                      text: "ontact Preferences",
+                      text: "Contact Preferences",
                       icon: Icons.notifications_active_rounded,
                       onPressed: () {}),
                   ProfileIconTextButton(
