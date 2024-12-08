@@ -54,13 +54,18 @@ Klasörlerin İşlevleri
 ## 🛠️ Kurulum
 
 - Depoyu klonlayın:
+  ```plaintext
 git clone https://github.com/kullanıcıAdı/ePazarApp.git
 cd ePazarApp
+```
 
+  ```plaintext
 - Gerekli bağımlılıkları yükleyin
 flutter pub get
+```
 
+```plaintext
 - Uygulamayı çalıştırın:
 flutter run
-
+```
 ## 🎥 Uygulama Görüntüleri
