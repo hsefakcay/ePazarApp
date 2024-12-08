@@ -35,34 +35,32 @@ lib
 ---
 
 Klasörlerin İşlevleri
-core: Uygulamanın genel yapı taşları ve tekrar kullanılabilir kodlar içerir. Sabit değerler (constants) ve yardımcı araçlar (utils) bu klasördedir.
-data: Veri yönetimiyle ilgili işlemleri içerir. API'den veya yerel veritabanından veri almak için kullanılan repo ve veri modellerini tanımlayan model klasörlerinden oluşur.
-product: Uygulamaya özgü bileşenler, özel widget'lar bu klasörde yer alır.
-ui: Kullanıcı arayüzü (UI) ile ilgili ekran ve durum yönetimi dosyaları içerir. cubit, durum yönetimi için kullanılırken, view içinde farklı sayfa tasarımları bulunur.
-main.dart: Flutter uygulamasının başlangıç dosyasıdır.
+-core: Uygulamanın genel yapı taşları ve tekrar kullanılabilir kodlar içerir. Sabit değerler (constants) ve yardımcı araçlar (utils) bu klasördedir.
+-data: Veri yönetimiyle ilgili işlemleri içerir. API'den veya yerel veritabanından veri almak için kullanılan repo ve veri modellerini tanımlayan model klasörlerinden oluşur.
+-product: Uygulamaya özgü bileşenler, özel widget'lar bu klasörde yer alır.
+-ui: Kullanıcı arayüzü (UI) ile ilgili ekran ve durum yönetimi dosyaları içerir. cubit, durum yönetimi için kullanılırken, view içinde farklı sayfa tasarımları bulunur.
+-main.dart: Flutter uygulamasının başlangıç dosyasıdır.
 
 ---
 
 ## 🛠️ Kullanılan Teknolojiler
-Flutter: Mobil uygulama geliştirme
-Dio: API bağlantıları için HTTP istemcisi
-Flutter Bloc (Cubit): Durum yönetimi
-Material 3: Modern ve kullanıcı dostu tasarım
+-Flutter: Mobil uygulama geliştirme
+-Dio: API bağlantıları için HTTP istemcisi
+-Flutter Bloc (Cubit): Durum yönetimi
+-Material 3: Modern ve kullanıcı dostu tasarım
 
 ---
 
 ## 🛠️ Kurulum
-Bu projeyi klonlayın:
 
-bash
-Depoyu klonlayın:
+-Depoyu klonlayın:
 git clone https://github.com/kullanıcıAdı/ePazarApp.git
 cd ePazarApp
 
-Gerekli bağımlılıkları yükleyin
+-Gerekli bağımlılıkları yükleyin
 flutter pub get
 
-Uygulamayı çalıştırın:
+-Uygulamayı çalıştırın:
 flutter run
 
 ## 🎥 Uygulama Görüntüleri
