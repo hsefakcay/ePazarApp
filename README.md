@@ -41,6 +41,11 @@ lib
 - ui: Kullanıcı arayüzü (UI) ile ilgili ekran ve durum yönetimi dosyaları içerir. cubit, durum yönetimi için kullanılırken, view içinde farklı sayfa tasarımları bulunur.
 - main.dart: Flutter uygulamasının başlangıç dosyasıdır.
 
+- core: Contains the building blocks and reusable code of the application. Constant values (constants) and helper utilities (utils) are stored here.
+- data: Handles data management operations. This includes the repo for fetching data from APIs or local databases, and the model folder that defines data models.
+- product: Contains application-specific components, such as custom widgets.
+- ui: Includes screen and state management files related to the user interface (UI). The cubit folder is for state management, and the view folder contains different page designs.
+- main.dart: The entry point of the Flutter application.
 ---
 
 ## 🛠️ Technologies Used-  Kullanılan Teknolojiler
