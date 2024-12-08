@@ -1,4 +1,5 @@
 # 📱 ePazarApp  
+ePazarApp, **Flutter** ile geliştirilmiş bir mobil e-ticaret uygulamasıdır. Kullanıcılar uygulama üzerinden ürünleri görüntüleyebilir, sepete ekleyebilir ve alışveriş deneyimini gerçekleştirebilir.  
 
 ePazarApp is a mobile e-commerce application developed with **Flutter**. Users can browse products, add them to the cart, and complete their shopping experience through the app.
 
@@ -6,13 +7,12 @@ ePazarApp is a mobile e-commerce application developed with **Flutter**. Users c
 
 ## 🚀 Features - Özellikler
 
-- 🔍 Ürün arama ve listeleme  
-- 🛒 Sepete ürün ekleme ve çıkarma  
-- 📦 Kullanıcı dostu ve modern tasarım (Material 3)  
-- 🌐 API kullanarak dinamik veri çekme (Dio entegrasyonu)  
-- 📦 **Cubit** ile durum yönetimi  
-- 🌟 Kolayca özelleştirilebilir yapısı ile genişletilebilir  
-
+- 🔍 Product search and listing  
+- 🛒 Add and remove items from the cart  
+- 📦 User-friendly and modern design (Material 3)  
+- 🌐 Dynamic data fetching via API (Dio integration)  
+- 📦 State management with **Cubit**  
+- 🌟 Easily customizable and extendable structure  
 ---
 
 ## 📂 Project Structure - Proje Yapısı
