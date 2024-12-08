@@ -1,30 +1,36 @@
-# ePazarApp 🛍️
-ePazarApp, Flutter kullanılarak geliştirilen bir e-ticaret uygulamasıdır. Kullanıcıların ürünleri görüntüleyebileceği, sepetlerine ekleyebileceği ve işlemlerini kolayca yönetebileceği modern bir mobil uygulamadır.
+# 📱 ePazarApp  
 
-## 📱 Özellikler
-Ürün Listesi: Kategorilere ayrılmış ürünleri listeleme.
-Detay Sayfası: Ürün detaylarını görüntüleme ve sepete ekleme seçeneği.
-Sepet Yönetimi: Sepete ekleme, çıkarma ve toplam tutarı görüntüleme.
-Arama Fonksiyonu: Ürünler arasında kolayca arama yapma.
-Kullanıcı Dostu Arayüz: Responsive ve modern bir arayüz tasarımı.
-Favoriler: Ürünleri favorilere ekleme ve favori listesini yönetme.
-Çoklu Platform Desteği: Android, iOS ve Web uyumluluğu.
+ePazarApp, **Flutter** ile geliştirilmiş bir mobil e-ticaret uygulamasıdır. Kullanıcılar uygulama üzerinden ürünleri görüntüleyebilir, sepete ekleyebilir ve alışveriş deneyimini gerçekleştirebilir.  
 
+---
+
+## 🚀 Özellikler
+
+- 🔍 Ürün arama ve listeleme  
+- 🛒 Sepete ürün ekleme ve çıkarma  
+- 📦 Kullanıcı dostu ve modern tasarım (Material 3)  
+- 🌐 API kullanarak dinamik veri çekme (Dio entegrasyonu)  
+- 📦 **Cubit** ile durum yönetimi  
+- 🌟 Kolayca özelleştirilebilir yapısı ile genişletilebilir  
+
+---
 
 ## 📂 Proje Yapısı
+
+```plaintext
 lib
 ├── core
-│   ├── constants       # Sabit değerler (örn. renkler, metinler)
-│   ├── utils           # Yardımcı fonksiyonlar ve genel araçlar
+│   ├── constants       # Sabit değerler (ör. renk, metin)
+│   ├── utils           # Yardımcı fonksiyonlar
 ├── data
 │   ├── model           # Veri modelleri
-│   ├── repo            # Veri depolama ve API işlemleri
+│   ├── repo            # Veri çekme ve işleme
 ├── product
-│   └── widgets         # Uygulamaya özgü özel widget'lar
+│   └── widgets         # Özel widget bileşenleri
 ├── ui
-│   ├── cubit           # Durum yönetimi için Cubit sınıfları
-│   ├── view            # Ekran ve sayfa tasarımları
-├── main.dart           # Uygulamanın giriş noktası
+│   ├── cubit           # Durum yönetimi için Cubit dosyaları
+│   ├── view            # Ekran tasarımları
+├── main.dart           # Uygulamanın başlangıç noktası
 
 Klasörlerin İşlevleri
 core: Uygulamanın genel yapı taşları ve tekrar kullanılabilir kodlar içerir. Sabit değerler (constants) ve yardımcı araçlar (utils) bu klasördedir.
@@ -33,21 +39,24 @@ product: Uygulamaya özgü bileşenler, özel widget'lar bu klasörde yer alır.
 ui: Kullanıcı arayüzü (UI) ile ilgili ekran ve durum yönetimi dosyaları içerir. cubit, durum yönetimi için kullanılırken, view içinde farklı sayfa tasarımları bulunur.
 main.dart: Flutter uygulamasının başlangıç dosyasıdır.
 
+## 🛠️ Kullanılan Teknolojiler
+Flutter: Mobil uygulama geliştirme
+Dio: API bağlantıları için HTTP istemcisi
+Flutter Bloc (Cubit): Durum yönetimi
+Material 3: Modern ve kullanıcı dostu tasarım
+
 ## 🛠️ Kurulum
 Bu projeyi klonlayın:
 
 bash
-Kodu kopyala
+Depoyu klonlayın:
 git clone https://github.com/kullanıcıAdı/ePazarApp.git
 cd ePazarApp
-Gerekli bağımlılıkları yükleyin:
 
-bash
-Kodu kopyala
+Gerekli bağımlılıkları yükleyin
 flutter pub get
-Uygulamayı çalıştırın:
 
-bash
-Kodu kopyala
+Uygulamayı çalıştırın:
 flutter run
 
+## 🎥 Uygulama Görüntüleri
