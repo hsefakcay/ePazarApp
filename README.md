@@ -1,10 +1,10 @@
 # 📱 ePazarApp  
 
-ePazarApp, **Flutter** ile geliştirilmiş bir mobil e-ticaret uygulamasıdır. Kullanıcılar uygulama üzerinden ürünleri görüntüleyebilir, sepete ekleyebilir ve alışveriş deneyimini gerçekleştirebilir.  
+ePazarApp is a mobile e-commerce application developed with **Flutter**. Users can browse products, add them to the cart, and complete their shopping experience through the app.
 
 ---
 
-## 🚀 Özellikler
+## 🚀 Features - Özellikler
 
 - 🔍 Ürün arama ve listeleme  
 - 🛒 Sepete ürün ekleme ve çıkarma  
@@ -15,26 +15,26 @@ ePazarApp, **Flutter** ile geliştirilmiş bir mobil e-ticaret uygulamasıdır. 
 
 ---
 
-## 📂 Proje Yapısı
+## 📂 Project Structure - Proje Yapısı
 
 ```plaintext
 lib
 ├── core
-│   ├── constants       # Sabit değerler (ör. renk, metin)
-│   ├── utils           # Yardımcı fonksiyonlar
+│   ├── constants       # Constant values (e.g., colors, texts)
+│   ├── utils           # Helper functions
 ├── data
-│   ├── model           # Veri modelleri
-│   ├── repo            # Veri çekme ve işleme
+│   ├── model           # Data models
+│   ├── repo            # Data fetching and processing
 ├── product
-│   └── widgets         # Özel widget bileşenleri
+│   └── widgets         # Custom widget components
 ├── ui
-│   ├── cubit           # Durum yönetimi için Cubit dosyaları
-│   ├── view            # Ekran tasarımları
-├── main.dart           # Uygulamanın başlangıç noktası
+│   ├── cubit           # Cubit files for state management
+│   ├── view            # Screen designs
+├── main.dart           
 ```
 ---
 
-Klasörlerin İşlevleri
+### Folder Functions - Klasörlerin İşlevleri 
 - core: Uygulamanın genel yapı taşları ve tekrar kullanılabilir kodlar içerir. Sabit değerler (constants) ve yardımcı araçlar (utils) bu klasördedir.
 - data: Veri yönetimiyle ilgili işlemleri içerir. API'den veya yerel veritabanından veri almak için kullanılan repo ve veri modellerini tanımlayan model klasörlerinden oluşur.
 - product: Uygulamaya özgü bileşenler, özel widget'lar bu klasörde yer alır.
@@ -43,7 +43,7 @@ Klasörlerin İşlevleri
 
 ---
 
-## 🛠️ Kullanılan Teknolojiler
+## 🛠️ Technologies Used-  Kullanılan Teknolojiler
 - Flutter: Mobil uygulama geliştirme
 - Dio: API bağlantıları için HTTP istemcisi
 - Flutter Bloc (Cubit): Durum yönetimi
@@ -51,24 +51,24 @@ Klasörlerin İşlevleri
 
 ---
 
-## 🛠️ Kurulum
+## 🛠️ Installation- Kurulum
 
-- Depoyu klonlayın:
+- Clone the repository:
 ```plaintext
 git clone https://github.com/kullanıcıAdı/ePazarApp.git
 cd ePazarApp
 ```
 
-- Gerekli bağımlılıkları yükleyin
+- Install the dependencies:
 ```plaintext
 flutter pub get
 ```
 
-- Uygulamayı çalıştırın:
+- Run the application:
 ```plaintext
 flutter run
 ```
-## 🎥 Uygulama Görüntüleri
+## 🎥 Screenshots - Uygulama Görüntüleri
 
 
 https://github.com/user-attachments/assets/3a5bbdb3-7bcb-4dee-9760-2bec106da948
