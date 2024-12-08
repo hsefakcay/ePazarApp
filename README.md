@@ -35,12 +35,6 @@ lib
 ---
 
 ### Folder Functions - Klasörlerin İşlevleri 
-- core: Uygulamanın genel yapı taşları ve tekrar kullanılabilir kodlar içerir. Sabit değerler (constants) ve yardımcı araçlar (utils) bu klasördedir.
-- data: Veri yönetimiyle ilgili işlemleri içerir. API'den veya yerel veritabanından veri almak için kullanılan repo ve veri modellerini tanımlayan model klasörlerinden oluşur.
-- product: Uygulamaya özgü bileşenler, özel widget'lar bu klasörde yer alır.
-- ui: Kullanıcı arayüzü (UI) ile ilgili ekran ve durum yönetimi dosyaları içerir. cubit, durum yönetimi için kullanılırken, view içinde farklı sayfa tasarımları bulunur.
-- main.dart: Flutter uygulamasının başlangıç dosyasıdır.
-
 - core: Contains the building blocks and reusable code of the application. Constant values (constants) and helper utilities (utils) are stored here.
 - data: Handles data management operations. This includes the repo for fetching data from APIs or local databases, and the model folder that defines data models.
 - product: Contains application-specific components, such as custom widgets.
