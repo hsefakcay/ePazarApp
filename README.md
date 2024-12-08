@@ -69,3 +69,8 @@ flutter pub get
 flutter run
 ```
 ## 🎥 Uygulama Görüntüleri
+
+
+https://github.com/user-attachments/assets/3a5bbdb3-7bcb-4dee-9760-2bec106da948
+
+
