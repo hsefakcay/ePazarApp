@@ -31,7 +31,7 @@ lib
 │   ├── cubit           # Durum yönetimi için Cubit dosyaları
 │   ├── view            # Ekran tasarımları
 ├── main.dart           # Uygulamanın başlangıç noktası
-
+`\`\`\``
 ---
 
 Klasörlerin İşlevleri
