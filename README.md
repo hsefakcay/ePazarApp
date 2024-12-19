@@ -54,7 +54,7 @@ lib
 
 - Clone the repository:
 ```plaintext
-git clone https://github.com/kullanıcıAdı/ePazarApp.git
+git clone https://github.com/hsefakcay/ePazarApp.git
 cd ePazarApp
 ```
 
