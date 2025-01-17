@@ -5,7 +5,7 @@ ePazarApp is a mobile e-commerce application developed with **Flutter**. Users c
 
 ---
 
-## 🚀 Features - Özellikler
+## 🚀 Features
 
 - 🔍 Product search and listing  
 - 🛒 Add and remove items from the cart  
@@ -15,7 +15,7 @@ ePazarApp is a mobile e-commerce application developed with **Flutter**. Users c
 - 🌟 Easily customizable and extendable structure  
 ---
 
-## 📂 Project Structure - Proje Yapısı
+## 📂 Project Structure
 
 ```plaintext
 lib
@@ -34,7 +34,7 @@ lib
 ```
 ---
 
-### Folder Functions - Klasörlerin İşlevleri 
+### Folder Functions 
 - core: Contains the building blocks and reusable code of the application. Constant values (constants) and helper utilities (utils) are stored here.
 - data: Handles data management operations. This includes the repo for fetching data from APIs or local databases, and the model folder that defines data models.
 - product: Contains application-specific components, such as custom widgets.
@@ -50,7 +50,7 @@ lib
 
 ---
 
-## 🛠️ Installation- Kurulum
+## 🛠️ Installation
 
 - Clone the repository:
 ```plaintext
@@ -67,7 +67,7 @@ flutter pub get
 ```plaintext
 flutter run
 ```
-## 🎥 Screenshots - Uygulama Görüntüleri
+## 🎥 Screenshots 
 
 
 https://github.com/user-attachments/assets/3a5bbdb3-7bcb-4dee-9760-2bec106da948
